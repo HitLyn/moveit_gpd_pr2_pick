@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find moveit_gpd_pr2_pick)/launch/shadow_grasp_service.launch"/>
+  <node name="pr2_pick_object_demo" pkg="moveit_gpd_pr2_pick" 
+	type="moveit_gpd_pr2_pick_pick_object_with_shadow"/>
+</launch>
