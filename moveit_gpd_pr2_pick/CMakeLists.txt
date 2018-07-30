@@ -22,6 +22,7 @@ catkin_package(
 
 
 include_directories(
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -42,3 +43,12 @@ target_link_libraries(${PROJECT_NAME}_pick ${catkin_LIBRARIES})
 
 add_executable(${PROJECT_NAME}_service src/service.cpp)
 target_link_libraries(${PROJECT_NAME}_service ${catkin_LIBRARIES})
+
+add_executable(${PROJECT_NAME}_shadow_action_grasp src/pick_place_action.cpp)
+target_link_libraries(${PROJECT_NAME}_shadow_action_grasp ${catkin_LIBRARIES})
+
+add_executable(${PROJECT_NAME}_test_action_grasp src/test_action_grasp.cpp)
+target_link_libraries(${PROJECT_NAME}_test_action_grasp ${catkin_LIBRARIES})
+
+add_executable(${PROJECT_NAME}_gripper_grasp_action src/gripper_grasp_action.cpp)
+target_link_libraries(${PROJECT_NAME}_gripper_grasp_action ${catkin_LIBRARIES})
