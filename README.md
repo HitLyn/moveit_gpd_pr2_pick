@@ -1,5 +1,5 @@
 # moveit_gpd_pr2_pick
-# Using gpd message to grasp on Trixi
+# Grasp simulation on Trixi
 
 
 ## Working Process1 (with gpd package):
