@@ -26,11 +26,11 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME}_pick_object_with_gripper src/pick_object_with_gripper.cpp)
-target_link_libraries(${PROJECT_NAME}_pick_object_with_gripper ${catkin_LIBRARIES})
+#add_executable(${PROJECT_NAME}_pick_object_with_gripper src/pick_object_with_gripper.cpp)
+#target_link_libraries(${PROJECT_NAME}_pick_object_with_gripper ${catkin_LIBRARIES})
 
-add_executable(${PROJECT_NAME}_plan_gripper_grasp_service src/plan_gripper_grasp_service.cpp)
-target_link_libraries(${PROJECT_NAME}_plan_gripper_grasp_service ${catkin_LIBRARIES})
+#add_executable(${PROJECT_NAME}_plan_gripper_grasp_service src/plan_gripper_grasp_service.cpp)
+#target_link_libraries(${PROJECT_NAME}_plan_gripper_grasp_service ${catkin_LIBRARIES})
 
 add_executable(${PROJECT_NAME}_pick_object_with_shadow src/pick_object_with_shadow.cpp)
 target_link_libraries(${PROJECT_NAME}_pick_object_with_shadow ${catkin_LIBRARIES})
